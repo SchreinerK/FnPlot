@@ -1,0 +1,12 @@
+﻿<ResourceDictionary 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	
+	<SolidColorBrush x:Key="ThemeBlackBrush" Color="{DynamicResource ThemeBlack}"/>
+	<SolidColorBrush x:Key="ThemeWhiteBrush"  Color="{DynamicResource ThemeWhite}"/>
+	<SolidColorBrush x:Key="ThemeRedBrush" Color="{DynamicResource ThemeRed}"/>
+	<SolidColorBrush x:Key="ThemeGreenBrush"  Color="{DynamicResource ThemeGreen}"/>
+	
+	<SolidColorBrush x:Key="Series1Brush" Color="{DynamicResource Series1Color}"/>
+	<SolidColorBrush x:Key="Series2Brush" Color="{DynamicResource Series2Color}"/>
+</ResourceDictionary>

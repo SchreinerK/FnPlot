@@ -1,0 +1,21 @@
+﻿<UserControl 
+	x:Class="FnPlot.ParameterInputView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:FnPlot"
+    xmlns:converters="clr-namespace:FnPlot.Converters"
+    mc:Ignorable="d"    
+    d:DataContext="{d:DesignInstance Type=local:ParameterInputVM, IsDesignTimeCreatable=True}"
+>    <DockPanel>
+        <Label Content="{Binding Name, Converter={converters:SubtextConverter}}" Width="100"/>
+		<TextBox 
+			Text="{Binding EditValue, UpdateSourceTrigger=PropertyChanged}" 
+			MinWidth="40"
+			VerticalAlignment="Center"
+			BorderBrush="{Binding IsValid, Converter={converters:BoolToBrushConverter Black, Red}}"
+			BorderThickness="{Binding IsValid, Converter={converters:BoolToThicknessConverter 1, 2}}"
+			/>
+    </DockPanel>
+</UserControl>

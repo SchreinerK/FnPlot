@@ -1,0 +1,19 @@
+﻿<ksv:ViewModelApplication 
+	x:TypeArguments="local:AppVM" x:Class="FnPlot.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FnPlot"
+    xmlns:ksv="http://ksware.de/Presentation/ViewFramework"
+>
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/MahApps.Metro;component/Styles/Controls.xaml" />
+				<ResourceDictionary Source="/MahApps.Metro;component/Styles/Fonts.xaml" />
+				<ResourceDictionary Source="/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
+				
+				<ResourceDictionary Source="/FnPlot;component/Resources/LightTheme/@.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+</ksv:ViewModelApplication>

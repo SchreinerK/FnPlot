@@ -1,0 +1,5 @@
+Packages
+
+- KsWare.Presentation (a MVVM Framework)
+- MahApp.Metro (for UI Styling Dark/Light)
+- Newtonsoft.Json (for JSON support)
